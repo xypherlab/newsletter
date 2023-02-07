@@ -33,7 +33,7 @@ console.log(jsonData);
 const url = "https://us21.api.mailchimp.com/3.0/lists/9246617ab3";
 const options ={
     method: "POST",
-    auth: "xypher:23b8b21212464221dfd946de4686e166-us21"
+    auth: ""
 }
 const request = https.request(url,options,function(response){
 if(response.statusCode === 200){
@@ -57,7 +57,3 @@ app.listen(process.env.PORT || 3000,function(){
     console.log("Server is running on port 3000.");
     });
 
-// API KEY
-// 23b8b21212464221dfd946de4686e166-us21
-// List ID
-// 9246617ab3
